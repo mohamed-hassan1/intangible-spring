@@ -1,4 +1,5 @@
 # Intangible Spring
 
 Freelance Project
-HTML, CSS, and JS. With Bootstrap Framework
+
+HTML, CSS, and JS. Using Bootstrap Framework

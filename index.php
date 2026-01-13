@@ -23,10 +23,52 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 
+<?php include 'components/analytics.php'; ?>
+
 <body>
 
   <!-- *** Start Navbar *** -->
-  <?php include 'components/navbar.php'?>
+  <nav class="navbar navbar-expand-md position-absolute w-100">
+    <div class="container">
+      <a class="navbar-brand" href="#"><img src="images/logo-white.png" alt="logo" class="img-fluid"></a>
+      <button class="navbar-toggler d-md-none d-flex align-items-center justify-content-center flex-wrap collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarmenu" aria-controls="navbarmenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="burger-icon d-block w-100"></span>
+        <span class="burger-icon d-block w-100"></span>
+        <span class="burger-icon d-block w-100"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarmenu">
+        <div class="inner-navbar d-flex w-100">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"  aria-expanded="false">
+                Products
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="products.php">Royalty Rates</a></li>
+                <li><a class="dropdown-item" href="servicess.php">Service Fees</a></li>
+                <li><a class="dropdown-item" href="#">Contract Database</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Solutions
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a href="solutions.php" class="dropdown-item">Corporations</a></li>
+                <li><a href="#" class="dropdown-item">Governments</a></li>
+                <li><a href="#" class="dropdown-item">Consulting Firms</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a href="about.php" class="nav-link">Why Intangible Spring</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
   <!-- *** End Navbar *** -->
 
   <!-- Overlay loader -->
@@ -99,7 +141,7 @@
         <!-- Start Goal -->
         <div class="col-md-4 col-12 content" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="150">
           <div class="icon">
-            <img src="images/goal.png" alt="goal" class="img-fluid">
+            <img src="images/goal.png" alt="goal" class="img-fluid" loading="lazy">
           </div>
           <div class="heading">
             <h5>Accurate data</h5>
@@ -112,7 +154,7 @@
         <!-- Start Goal -->
         <div class="col-md-4 col-12 content" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
           <div class="icon">
-            <img src="images/goal2.png" alt="goal" class="img-fluid">
+            <img src="images/goal2.png" alt="goal" class="img-fluid" loading="lazy">
           </div>
           <div class="heading">
             <h5>Creative solutions</h5>
@@ -125,7 +167,7 @@
         <!-- Start Goal -->
         <div class="col-md-4 col-12 content" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
           <div class="icon">
-            <img src="images/goal3.png" alt="goal" class="img-fluid">
+            <img src="images/goal3.png" alt="goal" class="img-fluid" loading="lazy">
           </div>
           <div class="heading">
             <h5>Great services</h5>
@@ -318,7 +360,7 @@
         </div>
         <div class="col-md-5 col-12 pic-content d-none d-md-block">
           <div class="pic" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
-            <img src="images/faq-pic.png" alt="faq" class="img-fluid">
+            <img src="images/faq-pic.png" alt="faq" class="img-fluid" loading="lazy">
           </div>
         </div>
       </div>
@@ -347,7 +389,69 @@
   <!-- *** End Action *** -->
 
   <!-- *** Start Footer *** -->
-  <?php include 'components/footer.php' ?>
+  <footer class="footer-section">
+    <div class="container">
+      <div class="row">
+        <div class="left-content col-lg-3 col-sm-6 col-12">
+          <a href="#" class="logo">
+            <img src="images/logo-color.png" alt="logo" class="img-fluid">
+          </a>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <div class="right-content col-lg-9 col-sm-6 col-12">
+          <div class="row">
+            <div class="col">
+              <p class="title">Products</p>
+              <div class="links-list">
+                <a href="products.php">Royalty Rates</a>
+                <a href="servicess.php">Service Fees</a>
+                <a href="#">Contract Database</a>
+              </div>
+            </div>
+            <div class="col">
+              <p class="title">Solutions</p>
+              <div class="links-list">
+                <a href="solutions.php">Corporations</a>
+                <a href="#">Governments</a>
+                <a href="#">Consulting Firms</a>
+              </div>
+            </div>
+            <div class="col-lg-5 col">
+              <p class="title">Resources</p>
+              <div class="links-list">
+                <a href="about.php">About Us</a>
+                <a href="#">Blog</a>
+                <a href="#">Demos</a>
+                <a href="#">Support</a>
+                <a href="#">Contact Us</a>
+                <a href="#">Case Studies and Whitepapers</a>
+              </div>
+            </div>
+            <div class="col">
+              <p class="title">Social</p>
+              <div class="links-list">
+                <a href="#">LinkedIn</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="btm-content">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6 col-12 text-md-start text-center">
+            <div class="links-list">
+              <a href="#">Privacy policy</a>
+            </div>
+          </div>
+          <div class="col-sm-6 col-12 text-md-end text-center">
+            <p class="mb-0 copyright-txt">© IntangibleSpring 2022</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
   <!-- *** End Footer *** -->
 
   <!-- *** Start Scripts *** -->

@@ -23,10 +23,52 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 
+<?php include 'components/analytics.php'; ?>
+
 <body>
 
   <!-- *** Start Navbar *** -->
-  <?php include 'components/navbar.php'?>
+  <nav class="navbar navbar-expand-md position-absolute w-100">
+    <div class="container">
+      <a class="navbar-brand" href="./"><img src="images/logo-white.png" alt="logo" class="img-fluid"></a>
+      <button class="navbar-toggler d-md-none d-flex align-items-center justify-content-center flex-wrap collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarmenu" aria-controls="navbarmenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="burger-icon d-block w-100"></span>
+        <span class="burger-icon d-block w-100"></span>
+        <span class="burger-icon d-block w-100"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarmenu">
+        <div class="inner-navbar d-flex w-100">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="./">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"  aria-expanded="false">
+                Products
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="products.php">Royalty Rates</a></li>
+                <li><a class="dropdown-item" href="servicess.php">Service Fees</a></li>
+                <li><a class="dropdown-item" href="#">Contract Database</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Solutions
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a href="solutions.php" class="dropdown-item">Corporations</a></li>
+                <li><a href="#" class="dropdown-item">Governments</a></li>
+                <li><a href="#" class="dropdown-item">Consulting Firms</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a href="about.php" class="nav-link">Why Intangible Spring</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
   <!-- *** End Navbar *** -->
 
   <!-- Overlay loader -->
@@ -135,7 +177,7 @@
         </div>
         <div class="col-md-6 col-12 pic-content pt-4 pt-md-0" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="150">
           <div class="pic">
-            <img src="images/data.png" alt="data" class="img-fluid">
+            <img src="images/data.png" alt="data" class="img-fluid" loading="lazy">
           </div>
         </div>
       </div>
@@ -155,43 +197,43 @@
             <div class="description">
               <!-- Start Feature -->
               <div class="feature d-flex" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200">
-                <div class="icon"><img src="images/benefit1.png" alt="feature" class="img-fluid"></div>
+                <div class="icon"><img src="images/benefit1.png" alt="feature" class="img-fluid" loading="lazy"></div>
                 <div class="feature-text">Examining a large number of documents to find primarily false positives is both frustrating and time consuming. Contracts enable you to limit your search to certain clauses. This enables your searches to identify those valuable needles in a haystack of contracts.</div>
               </div>
               <!-- End Feature -->
               <!-- Start Feature -->
               <div class="feature d-flex" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="300">
-                <div class="icon"><img src="images/benefit2.png" alt="feature" class="img-fluid"></div>
+                <div class="icon"><img src="images/benefit2.png" alt="feature" class="img-fluid" loading="lazy"></div>
                 <div class="feature-text">Payments in service agreements vary greatly; there are considerations in percentage, fixed, fees, shares, and varied percentage basis, such as sales or costs. Contract technology enables you to find the specific payment you seek.</div>
               </div>
               <!-- End Feature -->
               <!-- Start Feature -->
               <div class="feature d-flex" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="400">
-                <div class="icon"><img src="images/feature-icon3.png" alt="feature" class="img-fluid"></div>
+                <div class="icon"><img src="images/feature-icon3.png" alt="feature" class="img-fluid" loading="lazy"></div>
                 <div class="feature-text">Company agreements can be hundreds of pages long. Finding the one with a certain phrase is time consuming and tiresome. Contracts delivers pertinent snippets that display in complete context with a click.</div>
               </div>
               <!-- End Feature -->
               <!-- Start Feature -->
               <div class="feature d-flex" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="500">
-                <div class="icon"><img src="images/feature-icon4.png" alt="feature" class="img-fluid"></div>
+                <div class="icon"><img src="images/feature-icon4.png" alt="feature" class="img-fluid" loading="lazy"></div>
                 <div class="feature-text">Look for certain sorts of agreements (for example, consultancy, investment, management, and agency).</div>
               </div>
               <!-- End Feature -->
               <!-- Start Feature -->
               <div class="feature d-flex align-items-center" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="400">
-                <div class="icon pt-0"><img src="images/feature-icon6.png" alt="feature" class="img-fluid"></div>
+                <div class="icon pt-0"><img src="images/feature-icon6.png" alt="feature" class="img-fluid" loading="lazy"></div>
                 <div class="feature-text">Conduct keyword searches in specific phrases, such as the agreement's title and preamble.</div>
               </div>
               <!-- End Feature -->
               <!-- Start Feature -->
               <div class="feature d-flex" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="500">
-                <div class="icon"><img src="images/benefit3.png" alt="feature" class="img-fluid"></div>
+                <div class="icon"><img src="images/benefit3.png" alt="feature" class="img-fluid" loading="lazy"></div>
                 <div class="feature-text">Search for specific service fees.</div>
               </div>
               <!-- End Feature -->
               <!-- Start Feature -->
               <div class="feature d-flex" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="600">
-                <div class="icon"><img src="images/benefit4.png" alt="feature" class="img-fluid"></div>
+                <div class="icon"><img src="images/benefit4.png" alt="feature" class="img-fluid" loading="lazy"></div>
                 <div class="feature-text">Robust Boolean full-text search feature.</div>
               </div>
               <!-- End Feature -->
@@ -200,7 +242,7 @@
         </div>
         <div class="col-md-6 col-12 pic-content pt-4" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
           <div class="pic">
-            <img src="images/benefits.png" alt="benefits" class="img-fluid">
+            <img src="images/benefits.png" alt="benefits" class="img-fluid" loading="lazy">
           </div>
         </div>
       </div>
@@ -419,7 +461,69 @@
   <!-- *** End Action *** -->
 
   <!-- *** Start Footer *** -->
-  <?php include 'components/footer.php' ?>
+  <footer class="footer-section">
+    <div class="container">
+      <div class="row">
+        <div class="left-content col-lg-3 col-sm-6 col-12">
+          <a href="./" class="logo">
+            <img src="images/logo-color.png" alt="logo" class="img-fluid">
+          </a>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <div class="right-content col-lg-9 col-sm-6 col-12">
+          <div class="row">
+            <div class="col">
+              <p class="title">Products</p>
+              <div class="links-list">
+                <a href="products.php">Royalty Rates</a>
+                <a href="servicess.php">Service Fees</a>
+                <a href="#">Contract Database</a>
+              </div>
+            </div>
+            <div class="col">
+              <p class="title">Solutions</p>
+              <div class="links-list">
+                <a href="solutions.php">Corporations</a>
+                <a href="#">Governments</a>
+                <a href="#">Consulting Firms</a>
+              </div>
+            </div>
+            <div class="col-lg-5 col">
+              <p class="title">Resources</p>
+              <div class="links-list">
+                <a href="about.php">About Us</a>
+                <a href="#">Blog</a>
+                <a href="#">Demos</a>
+                <a href="#">Support</a>
+                <a href="#">Contact Us</a>
+                <a href="#">Case Studies and Whitepapers</a>
+              </div>
+            </div>
+            <div class="col">
+              <p class="title">Social</p>
+              <div class="links-list">
+                <a href="#">LinkedIn</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="btm-content">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6 col-12 text-md-start text-center">
+            <div class="links-list">
+              <a href="#">Privacy policy</a>
+            </div>
+          </div>
+          <div class="col-sm-6 col-12 text-md-end text-center">
+            <p class="mb-0 copyright-txt">© IntangibleSpring 2022</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
   <!-- *** End Footer *** -->
 
   <!-- *** Start Scripts *** -->

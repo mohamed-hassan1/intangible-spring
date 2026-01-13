@@ -23,10 +23,52 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 
+<?php include 'components/analytics.php'; ?>
+
 <body>
 
   <!-- *** Start Navbar *** -->
-  <?php include 'components/navbar.php'?>
+  <nav class="navbar navbar-expand-md position-absolute w-100">
+    <div class="container">
+      <a class="navbar-brand" href="./"><img src="images/logo-white.png" alt="logo" class="img-fluid"></a>
+      <button class="navbar-toggler d-md-none d-flex align-items-center justify-content-center flex-wrap collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarmenu" aria-controls="navbarmenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="burger-icon d-block w-100"></span>
+        <span class="burger-icon d-block w-100"></span>
+        <span class="burger-icon d-block w-100"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarmenu">
+        <div class="inner-navbar d-flex w-100">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="./">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"  aria-expanded="false">
+                Products
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="products.php">Royalty Rates</a></li>
+                <li><a class="dropdown-item" href="servicess.php">Service Fees</a></li>
+                <li><a class="dropdown-item" href="contract.php">Contract Database</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Solutions
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a href="#" class="dropdown-item">Corporations</a></li>
+                <li><a href="#" class="dropdown-item">Governments</a></li>
+                <li><a href="#" class="dropdown-item">Consulting Firms</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a href="about.php" class="nav-link">Why Intangible Spring</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
   <!-- *** End Navbar *** -->
 
   <!-- Overlay loader -->
@@ -131,37 +173,37 @@
               </div>
               <!-- Start Feature -->
               <div class="feature d-flex" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200">
-                <div class="icon"><img src="images/feature-icon.png" alt="feature" class="img-fluid"></div>
+                <div class="icon"><img src="images/feature-icon.png" alt="feature" class="img-fluid" loading="lazy"></div>
                 <div class="feature-text">Extracted summary fields with richer synopses of licensed intangibles and other normalized data like parties, licensing terms, royalty rates, and other payments.</div>
               </div>
               <!-- End Feature -->
               <!-- Start Feature -->
               <div class="feature d-flex" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200">
-                <div class="icon"><img src="images/feature-icon2.png" alt="feature" class="img-fluid"></div>
+                <div class="icon"><img src="images/feature-icon2.png" alt="feature" class="img-fluid" loading="lazy"></div>
                 <div class="feature-text">Information on the stages of drug and medical device development.</div>
               </div>
               <!-- End Feature -->
               <!-- Start Feature -->
               <div class="feature d-flex" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200">
-                <div class="icon"><img src="images/feature-icon3.png" alt="feature" class="img-fluid"></div>
+                <div class="icon"><img src="images/feature-icon3.png" alt="feature" class="img-fluid" loading="lazy"></div>
                 <div class="feature-text">In the domains of intangible development, enhancement, maintenance, protection, and exploitation, DEMPE examines contractual allocations of duties performed, assets utilized, and risks assumed.</div>
               </div>
               <!-- End Feature -->
               <!-- Start Feature -->
               <div class="feature d-flex" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200">
-                <div class="icon"><img src="images/feature-icon4.png" alt="feature" class="img-fluid"></div>
+                <div class="icon"><img src="images/feature-icon4.png" alt="feature" class="img-fluid" loading="lazy"></div>
                 <div class="feature-text">The IP capsules for each intangible include license agreements, patent registrations, and company announcements.</div>
               </div>
               <!-- End Feature -->
               <!-- Start Feature -->
               <div class="feature d-flex align-items-center" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200">
-                <div class="icon pt-0"><img src="images/feature-icon5.png" alt="feature" class="img-fluid"></div>
+                <div class="icon pt-0"><img src="images/feature-icon5.png" alt="feature" class="img-fluid" loading="lazy"></div>
                 <div class="feature-text">Statistical tools tailored to the industry.</div>
               </div>
               <!-- End Feature -->
               <!-- Start Feature -->
               <div class="feature d-flex" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200">
-                <div class="icon"><img src="images/feature-icon6.png" alt="feature" class="img-fluid"></div>
+                <div class="icon"><img src="images/feature-icon6.png" alt="feature" class="img-fluid" loading="lazy"></div>
                 <div class="feature-text">With a single click, you may export agreements, search tactics, acceptance and rejection matrices, and summary data.</div>
               </div>
               <!-- End Feature -->
@@ -173,7 +215,7 @@
         </div>
         <div class="col-md-6 col-12 pic-content pt-4" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
           <div class="pic">
-            <img src="images/data.png" alt="data" class="img-fluid">
+            <img src="images/data.png" alt="data" class="img-fluid" loading="lazy">
           </div>
         </div>
       </div>
@@ -187,7 +229,7 @@
       <div class="row">
         <div class="col-md-6 col-12 pic-content maxwidth order-2 order-md-1 pt-4 pt-md-0" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="150">
           <div class="pic">
-            <img src="images/solutions2.png" alt="solutions" class="img-fluid">
+            <img src="images/solutions2.png" alt="solutions" class="img-fluid" loading="lazy">
           </div>
         </div>
         <div class="col-md-6 col-12 text-content ptop order-1 order-md-2" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="150">
@@ -322,7 +364,7 @@
         </div>
         <div class="col-md-5 col-12 pic-content d-none d-md-block">
           <div class="pic" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
-            <img src="images/faq-pic.png" alt="faq" class="img-fluid">
+            <img src="images/faq-pic.png" alt="faq" class="img-fluid" loading="lazy">
           </div>
         </div>
       </div>
@@ -351,7 +393,69 @@
   <!-- *** End Action *** -->
 
   <!-- *** Start Footer *** -->
-  <?php include 'components/footer.php' ?>
+  <footer class="footer-section">
+    <div class="container">
+      <div class="row">
+        <div class="left-content col-lg-3 col-sm-6 col-12">
+          <a href="./" class="logo">
+            <img src="images/logo-color.png" alt="logo" class="img-fluid">
+          </a>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <div class="right-content col-lg-9 col-sm-6 col-12">
+          <div class="row">
+            <div class="col">
+              <p class="title">Products</p>
+              <div class="links-list">
+                <a href="products.php">Royalty Rates</a>
+                <a href="servicess.php">Service Fees</a>
+                <a href="contract.php">Contract Database</a>
+              </div>
+            </div>
+            <div class="col">
+              <p class="title">Solutions</p>
+              <div class="links-list">
+                <a href="#">Corporations</a>
+                <a href="#">Governments</a>
+                <a href="#">Consulting Firms</a>
+              </div>
+            </div>
+            <div class="col-lg-5 col">
+              <p class="title">Resources</p>
+              <div class="links-list">
+                <a href="about.php">About Us</a>
+                <a href="#">Blog</a>
+                <a href="#">Demos</a>
+                <a href="#">Support</a>
+                <a href="#">Contact Us</a>
+                <a href="#">Case Studies and Whitepapers</a>
+              </div>
+            </div>
+            <div class="col">
+              <p class="title">Social</p>
+              <div class="links-list">
+                <a href="#">LinkedIn</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="btm-content">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6 col-12 text-md-start text-center">
+            <div class="links-list">
+              <a href="#">Privacy policy</a>
+            </div>
+          </div>
+          <div class="col-sm-6 col-12 text-md-end text-center">
+            <p class="mb-0 copyright-txt">© IntangibleSpring 2022</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
   <!-- *** End Footer *** -->
 
   <!-- *** Start Scripts *** -->

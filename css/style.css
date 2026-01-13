@@ -20,12 +20,7 @@ body {
   color: var(--thirdColor);
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1,h2,h3,h4,h5,h6 {
   color: var(--secColor);
   font-weight: 700;
 }
@@ -64,21 +59,19 @@ section {
   background-color: #000;
 }
 
-section .btn.outline,
-.btn.outline {
+section .btn.outline {
   background: #fff;
   color: var(--highlightColor);
   border: 1px solid var(--highlightColor);
 }
 
-section .btn.outline:hover,
-.btn.outline:hover {
+section .btn.outline:hover {
   color: #fff;
   background: linear-gradient(45deg, var(--mainColor), var(--highlightColor));
 }
 
-.btn-content>div:not(:last-child),
-.btn-content>.btn:not(:last-child) {
+.btn-content > div:not(:last-child),
+.btn-content > .btn:not(:last-child) {
   margin-right: 15px;
 }
 
@@ -163,23 +156,13 @@ section .btn.outline:hover,
 }
 
 @keyframes navScroll {
-  0% {
-    top: -90px
-  }
-
-  100% {
-    top: 0px
-  }
+  0% {top: -90px}
+  100% {top: 0px}
 }
 
 @keyframes revScroll {
-  0% {
-    top: 0px
-  }
-
-  100% {
-    top: -90px
-  }
+  0% {top: 0px}
+  100% {top: -90px}
 }
 
 .navbar.fixed-top .navbar-brand {
@@ -199,16 +182,15 @@ section .btn.outline:hover,
   margin-right: 20px;
 }
 
-.navbar .navbar-nav .nav-item>.nav-link {
+.navbar .navbar-nav .nav-item > .nav-link {
   color: #fff;
 }
 
-.dropdown-item.active,
-.dropdown-item:active {
+.dropdown-item.active, .dropdown-item:active {
   background-color: var(--highlightColor);
 }
 
-.navbar .navbar-nav .nav-item>.nav-link:hover {
+.navbar .navbar-nav .nav-item > .nav-link:hover {
   color: var(--highlightColor);
 }
 
@@ -244,15 +226,8 @@ section .btn.outline:hover,
 }
 
 @keyframes dropdown-menu {
-  0% {
-    top: 150%;
-    opacity: 0;
-  }
-
-  100% {
-    top: 100%;
-    opacity: 1;
-  }
+  0% {top: 150%; opacity: 0;}
+  100% {top: 100%; opacity: 1;}
 }
 
 .navbar .navbar-nav .nav-item.dropdown:hover .dropdown-menu {
@@ -453,7 +428,7 @@ section .btn.outline:hover,
 .services-section .service .row-content {
   padding: 50px 35px;
   border-radius: 35px;
-  background-color: rgba(255, 255, 255, .09);
+  background-color: rgba(255,255,255,.09);
   -webkit-backdrop-filter: blur(9px);
   backdrop-filter: blur(9px);
   margin-left: 60px;
@@ -518,7 +493,7 @@ section .btn.outline:hover,
 .faq-section .faq-item {
   box-shadow: 0px 3px 4px 0px rgb(34 42 60 / 12%);
   border-radius: 5px;
-  border: 1px solid rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(0,0,0,0.05);
 }
 
 .faq-section .faq-item:not(:last-child) {
@@ -650,11 +625,11 @@ section .btn.outline:hover,
 
 .about-section.bg-section p,
 .about-section.bg-section h2 {
-  color: #fff;
+ color: #fff;
 }
 
 .about-section.bg-section .highlight {
-  color: var(--highlightColor);
+ color: var(--highlightColor);
 }
 
 .about-section .container {
@@ -1008,39 +983,31 @@ section .btn.outline:hover,
   .partners-section .title {
     padding-right: 0px;
   }
-
   .faq-section .pic {
     padding-left: 45px;
   }
-
   .about-section .row.features-container {
     padding-bottom: 50px;
   }
-
   .about-section.features-section {
     padding-bottom: 50px;
   }
-
   .footer-section .links-list a {
     font-size: 14px;
     max-width: 160px;
   }
-
   .about-section .counter-container .icon {
     width: 28px;
     flex: 0 0 28px;
     margin-right: 10px;
     padding-bottom: 6px;
   }
-
   .about-section .counter-container .num-txt {
     font-size: 24px;
   }
-
   .about-section .counter-container .txt {
     font-size: 14px;
   }
-
   .contactus-section .form-content .inner-content {
     padding-right: 50px;
   }
@@ -1050,189 +1017,146 @@ section .btn.outline:hover,
   .navbar {
     top: 15px;
   }
-
   .navbar.fixed-top .navbar-brand,
   .navbar .navbar-brand {
     width: 165px;
   }
-
   .navbar .navbar-nav .nav-item:not(:last-child) {
     margin-right: 10px;
   }
-
   .partners-section .partner {
     padding: 0 15px;
   }
-
   .faq-section .btn-faq {
     padding: 15px 50px 15px 15px;
   }
-
   .faq-section .faq-item .inner-faq-content {
     padding: 15px 50px 10px 15px;
   }
-
   .faq-section .pic {
     padding-left: 25px;
   }
-
   .about-section {
     padding: 100px 0px;
   }
-
   .about-section .pic-content,
   .about-section .pic-content.maxwidth {
     max-width: 440px;
     margin: 0 auto;
   }
-
   .about-section .inner-content {
     padding-right: 30px;
   }
-
   .about-section .text-content.ptop {
     padding-top: 16px;
   }
-
   .about-section.features-section {
     padding-bottom: 15px;
   }
-
   .about-section.features-section {
     padding-bottom: 0;
   }
-
   .about-section.space-mid {
     padding: 100px 0 30px 0;
   }
-
   .footer-section .links-list a {
     max-width: 130px;
   }
-
   .footer-section .btm-content {
     margin-top: 40px;
   }
 }
 
 @media only screen and (max-width: 991px) {
-
   .navbar.fixed-top .navbar-brand,
   .navbar .navbar-brand {
     width: 145px;
   }
-
-  .navbar .navbar-nav .nav-item>.nav-link {
+  .navbar .navbar-nav .nav-item > .nav-link {
     font-size: 14px;
   }
-
   .navbar .navbar-nav .nav-item:not(:last-child) {
     margin-right: 5px;
   }
-
   .navbar .navbar-nav .dropdown-toggle {
     padding-right: 25px;
   }
-
-  .navbar .dropdown-item {
+  .navbar .dropdown-item  {
     font-size: 14px;
   }
-
   h1 {
     line-height: initial;
   }
-
   .partners-section .partner {
     padding: 0 10px 10px;
   }
-
   .partners-section .title {
     padding-top: 5px;
   }
-
   .services-section .service .row-content {
     padding: 30px 15px;
     margin-left: 35px;
   }
-
   .faq-section .pic {
     padding-left: 0;
   }
-
   .faq-section .btn-faq {
     font-size: 15px;
   }
-
   .faq-section .heading {
     margin-bottom: 35px;
   }
-
   .contactus-section,
   .about-section {
     padding: 75px 0px;
   }
-
   .about-section.space-mid {
     padding: 75px 0 0 0;
   }
-
   .about-section h2 {
     line-height: 35px;
     font-size: 27px;
   }
-
   .about-section p {
     font-size: 15px;
   }
-
   .about-section .feature .feature-text {
     font-size: 15px;
     padding-left: 15px;
   }
-
   .about-section .feature .icon {
     width: 30px;
     flex: 0 0 30px;
   }
-
   .about-section .pricing-container .pricing-content {
     padding: 20px;
   }
-
   .about-section .feature-list .feature-item {
     font-size: 15px;
     margin-bottom: 15px;
   }
-
   .footer-section .right-content {
     padding-left: 12px;
   }
-
   .footer-section .links-list a {
     max-width: 100%;
     display: block;
   }
-
   .contactus-section .form-content .inner-content {
     padding-right: 0;
   }
-
   .contactus-section .inner-content {
     padding: 20px;
   }
-
   .contactus-section .contact-options .inner-content {
     border-radius: 15px;
   }
-
   .contactus-section .description {
     margin-bottom: 35px;
   }
-
   .contactus-section .form-content .form-group:not(:last-child) {
     margin-bottom: 20px;
   }
-
   .contactus-section .inner-content .title {
     margin-bottom: 30px;
   }
@@ -1242,238 +1166,185 @@ section .btn.outline:hover,
   .container {
     padding: 0 20px;
   }
-
   .navbar.fixed-top .navbar-brand,
   .navbar .navbar-brand {
     width: 155px;
   }
-
   .navbar .navbar-collapse {
     z-index: 99;
   }
-
   .navbar .navbar-collapse .inner-navbar {
     background-color: var(--bgColor);
-    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-top: 1px solid rgba(255,255,255,0.5);
     margin: 10px 0 0 0;
     padding: 5px 12px 5px 12px;
   }
-
   .navbar .navbar-collapse .inner-navbar .navbar-nav {
     width: 100%;
   }
-
   .header-section {
-    min-height: 670px !important;
+    min-height: 670px!important;
   }
-
   .header-section .features-list {
     max-width: 420px;
     margin: 0 auto;
   }
-
   .header-section .features-list .icon {
     margin-right: 8px;
   }
-
   .goals-section {
     padding: 55px 0 40px;
   }
-
   .goals-section .content .icon {
     width: 80px;
     height: 80px;
     padding: 15px;
   }
-
   .contactus-section,
   .services-section {
     padding: 60px 0;
   }
-
   .services-section .service .row-content {
     padding: 25px 10px;
     margin-left: 0px;
   }
-
   .services-section .service:not(:last-child) {
     padding-bottom: 25px;
   }
-
   .services-section .service .pic-content {
     order: 1;
     margin-bottom: 20px;
   }
-
   .services-section .service .text-content {
     order: 2;
   }
-
   .services-section .service .pic {
     min-height: 250px;
   }
-
-  .btn-content>.btn,
-  .btn-content>.btn:not(:last-child),
-  .btn-content>div:not(:last-child) {
+  .btn-content > .btn,
+  .btn-content > .btn:not(:last-child),
+  .btn-content > div:not(:last-child) {
     margin: 0 10px 15px;
   }
-
-  .btn-content>div:first-child {
+  .btn-content > div:first-child {
     margin-left: 0;
   }
-
   .faq-section {
     padding: 60px 0;
   }
-
   .services-section h4 {
     line-height: 29px;
   }
-
   .faq-section .text-content {
     padding-top: 0px;
   }
-
   .action-section .overlay-content {
     padding: 50px 0;
   }
-
   .action-section h3 {
     line-height: 32px;
   }
-
   .about-section {
     padding: 60px 0px;
   }
-
   .about-section.space-mid {
     padding: 60px 0 0 0;
   }
-
   .about-section .inner-content {
     padding-right: 0px;
   }
-
   .about-section .text-content.ptop {
     padding-top: 0px;
   }
-
-  .about-section .pic-content,
-  .about-section .pic-content.maxwidth {
+  .about-section .pic-content, .about-section .pic-content.maxwidth {
     max-width: 365px;
   }
-
   .action-section .heading {
     margin-bottom: 5px;
   }
-
   .about-section .feature-list {
     max-width: 465px;
     margin: 0 auto;
   }
-
   .about-section .counter-container {
     max-width: 325px;
     margin: 0 auto;
   }
-
   .contactus-section .description {
     margin-bottom: 15px;
   }
-
   .contactus-section .inner-content {
     padding: 25px;
   }
-
   .contactus-section .form-content .inner-content {
     padding-bottom: 50px;
   }
-
   .contactus-section .description {
     margin-bottom: 0;
-  }
+  } 
 }
 
 @media only screen and (max-width: 575px) {
   .header-section .heading {
     padding-top: 40px;
   }
-
   .partners-section .title {
     padding-bottom: 20px;
   }
-
   .partners-section .partner {
     padding: 0 20px 10px;
   }
-
   .services-section .content {
     padding: 0;
   }
-
   .services-section .heading {
     margin-bottom: 35px;
   }
-
   .services-section .service .row-content {
     padding: 20px 5px;
     border-radius: 25px;
   }
-
   .faq-section .faq-icon {
     width: 18px;
     height: 18px;
     right: 12px;
   }
-
   .action-section .overlay-content {
     padding: 40px 0;
   }
-
   .action-section h3 {
     line-height: 30px;
   }
-
   .about-section h2 {
     line-height: 34px;
     font-size: 26px;
   }
-
   .footer-section {
     padding: 30px 0;
   }
-
   .footer-section .logo {
     margin-bottom: 15px;
   }
-
   .footer-section .left-content {
     text-align: center;
     margin-bottom: 15px;
   }
-
   .footer-section .title {
     margin: 0 0 5px;
   }
-
   .footer-section .links-list {
     margin-bottom: 20px;
   }
-
   .footer-section .copyright-txt {
     font-size: 14px;
     font-weight: 500;
   }
-
   .footer-section .btm-content .links-list {
     margin-bottom: 0px;
   }
-
   .footer-section .btm-content {
     margin-top: 15px;
   }
-
   .contactus-section .inner-content {
     padding: 18px;
   }
@@ -1486,11 +1357,6 @@ section .btn.outline:hover,
 */
 
 @keyframes fadeIn2 {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
+  0% {opacity: 0;}
+  100% {opacity: 1;}
 }

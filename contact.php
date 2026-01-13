@@ -23,8 +23,6 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<?php include 'components/analytics.php'; ?>
-
 <body>
 
   <!-- *** Start Navbar *** -->
